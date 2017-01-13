@@ -1,0 +1,42 @@
+{
+  "name": "sf-core",
+  "version": "0.1.0",
+  "description": "The shared library for the frontend variants of SitFinder.",
+  "typings": "build/",
+  "files": [
+    "build/"
+  ],
+  "peerDependencies": {
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0",
+    "reselect": "^2.5.4",
+    "react-redux": "^4.4.5"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.35",
+    "@types/mocha": "^2.2.37",
+    "@types/sinon": "^1.16.29",
+    "@types/webpack": "^2.1.0",
+    "@types/webpack-env": "^1.13.0",
+    "@types/whatwg-fetch": "0.0.33",
+    "@types/whatwg-streams": "0.0.2",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "npm-install-peers": "^1.0.1-rc.3",
+    "sinon": "2.0.0-pre",
+    "ts-node": "^2.0.0",
+    "typescript": "^2.1.4",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "scripts": {
+    "build": "tsc --outDir build --diagnostics",
+    "dev": "mocha -w -r ts-node/register src/**/*.spec.ts",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "install-peers": "npm-install-peers"
+  },
+  "author": "Damian Wood <damian@live.co.uk>",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=5.1"
+  }
+}
