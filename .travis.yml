@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "5.1"
+dist: trusty
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install
+  # The parent module (sf-web, sf-ios, or sf-android) will specify some dependencies, but for testing purposes we need them installed now.
+  - npm run install-peers
+script:
+  # Basic unit tests that run inside NodeJS without a browser. This command also fails if compilation fails.
+  - npm test
