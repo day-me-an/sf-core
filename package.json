@@ -30,8 +30,8 @@
   },
   "scripts": {
     "build": "tsc --outDir build --diagnostics",
-    "dev": "mocha -w --watch-extensions ts -r ts-node/register src/**/*.spec.ts",
-    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "dev": "mocha --opts mocha.opts --watch",
+    "test": "mocha --opts mocha.opts",
     "install-peers": "npm-install-peers"
   },
   "author": "Damian Wood <damian@live.co.uk>",
