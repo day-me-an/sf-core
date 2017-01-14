@@ -11,7 +11,7 @@ const reducers = Redux.combineReducers<AppState>({
 })
 
 export function configureStore(initialState?: AppState): Redux.Store<AppState> {
-  const enhancer = Redux.compose(Redux.applyMiddleware(thunk)),/*Deliberate syntax error to fail TravisCI build.*/
+  const enhancer = Redux.compose(Redux.applyMiddleware(thunk))
   const store = Redux.createStore<AppState>(reducers, initialState, enhancer)
   return store
 }
