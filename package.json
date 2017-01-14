@@ -29,7 +29,7 @@
     "whatwg-fetch": "^1.0.0"
   },
   "scripts": {
-    "build": "tsc --outDir build --diagnostics",
+    "build": "tsc --diagnostics",
     "dev": "mocha --opts mocha.opts --watch",
     "test": "mocha --opts mocha.opts",
     "install-peers": "npm-install-peers"
