@@ -30,7 +30,7 @@
   },
   "scripts": {
     "build": "tsc --outDir build --diagnostics",
-    "dev": "mocha -w -r ts-node/register src/**/*.spec.ts",
+    "dev": "mocha -w --watch-extensions ts -r ts-node/register src/**/*.spec.ts",
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
     "install-peers": "npm-install-peers"
   },
