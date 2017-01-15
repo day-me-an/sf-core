@@ -1,6 +1,6 @@
 {
   "name": "@day-me-an/sf-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The shared library for the frontend variants of SitFinder.",
   "typings": "lib/",
   "files": [
