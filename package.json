@@ -2,9 +2,9 @@
   "name": "@day-me-an/sf-core",
   "version": "0.1.0",
   "description": "The shared library for the frontend variants of SitFinder.",
-  "typings": "build/",
+  "typings": "lib/",
   "files": [
-    "build/"
+    "lib/"
   ],
   "peerDependencies": {
     "redux": "^3.6.0",

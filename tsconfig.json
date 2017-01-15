@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "build",
+    "outDir": "./lib",
     "target": "es5",
     "sourceMap": true,
     "module": "commonjs",
