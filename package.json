@@ -13,7 +13,6 @@
     "react-redux": "^4.4.5"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.35",
     "@types/mocha": "^2.2.37",
     "@types/sinon": "^1.16.29",
     "@types/webpack": "^2.1.0",
