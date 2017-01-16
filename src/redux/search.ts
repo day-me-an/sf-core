@@ -510,7 +510,7 @@ export const actions = {
     dispatch({type: 'sf/search/SET_DATE_START', start})
     // Set end date to null if this date is after it.
     const currentEnd = new Date(getState().search.query.dates.to)
-    if (new Date(start) > currentEnd) {
+    if (start && new Date(start) > currentEnd) {
       dispatch({type: 'sf/search/SET_DATE_END', end: null})  
     }
   },
@@ -519,7 +519,7 @@ export const actions = {
     dispatch({type: 'sf/search/SET_DATE_END', end})
     // Set start date to null if this date is before it.
     const currentStart = new Date(getState().search.query.dates.from)
-    if (new Date(end) < currentStart) {
+    if (end && new Date(end) < currentStart) {
       dispatch({type: 'sf/search/SET_DATE_START', start: null})  
     }
   },
