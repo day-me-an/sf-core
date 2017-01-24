@@ -36,6 +36,6 @@
   "author": "Damian Wood <damian@live.co.uk>",
   "license": "UNLICENSED",
   "engines": {
-    "node": ">=5.1"
+    "node": "6.9.4"
   }
 }
